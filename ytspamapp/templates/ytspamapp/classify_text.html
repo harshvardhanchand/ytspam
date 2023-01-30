@@ -1,6 +1,32 @@
+<style>
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    height: 150px;
+  }
+
+  h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .text-muted {
+    font-style: italic;
+    color: gray;
+  }
+</style>
+
 <form method="post">
   {% csrf_token %}
-  <textarea name="text"></textarea>
-  <button type="submit">Classify</button>
+  <div class="form-group">
+    <textarea name="text" class="form-control"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Classify</button>
 </form>
-<p>Classification: {{ classification }}</p>
+
+<div class="mt-3">
+  <h5>Classification:</h5>
+  <p class="text-muted">{{ classification }}</p>
+</div>
