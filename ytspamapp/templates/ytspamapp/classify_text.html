@@ -1,0 +1,36 @@
+<style>
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    height: 150px;
+  }
+
+  h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .text-muted {
+    font-style: italic;
+    color: gray;
+  }
+</style>
+
+<h2>YouTube Comment Spam Classifier</h2>
+<p>Please enter the text of the YouTube comment you want to classify:</p>
+
+<form method="post">
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="text">Comment Text:</label>
+    <textarea id="text" name="text" class="form-control" placeholder="Enter comment text here" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Classify</button>
+</form>
+
+<div class="mt-3">
+  <h5>Classification:</h5>
+  <p class="text-muted">{{ classification }}</p>
+</div>
