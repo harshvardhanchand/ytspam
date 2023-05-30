@@ -25,8 +25,7 @@ The model is retrained each time the server is started.
 
 ## Web App
 
-The web app allows you to submit your own YouTube comments and see if they are classified as spam or not spam. It displays the classification probability for each comment.
-
+The web app allows you to submit your own YouTube comments and see if they are classified as spam or not spam.
 The Django view passes the submitted comment text to the model and displays the prediction.
 
 ## Usage
