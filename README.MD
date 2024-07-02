@@ -44,6 +44,5 @@ Some ways this project could be improved in the future:
 - Add user accounts and save classification history
 - Track model metrics like accuracy, F1 score, etc. 
 - Add an API to classify comments programmatically
-- Better Fronted with Frontend Frameworks like React JS
 
 
